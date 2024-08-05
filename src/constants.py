@@ -1,0 +1,1 @@
+FOLDER_WITH_DATA = 'data'
