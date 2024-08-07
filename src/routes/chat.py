@@ -9,5 +9,5 @@ router = APIRouter()
 )
 async def message_to_pandas(message: Message = Body(...)):
     chat_pandas = Chat()
-    response = chat_pandas.generate_message()
+    response = chat_pandas.generate_message(message.msg)
     return response
